@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+.scroll-container {
+  position: fixed;
+
+  left: 0;
+  width: 100%;
+  height: 5px;
+}
+.scroll-container .indicator {
+  height: 100%;
+  background: #ee2c2c;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.scroll-to-top {
+  position: fixed;
+  bottom: 12px;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+
+  color: #fff;
+  z-index: 1;
+}
+.scroll-to-top .icon {
+  animation: scrollTop 0.5s alternate ease infinite;
+}
+.scroll-to-top :hover {
+  color: #fd1f1f;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes scrollTop {
   from {
-    transform: rotate(0deg);
+    transform: translateY(2px);
   }
   to {
-    transform: rotate(360deg);
+    transform: translateY(-1px);
   }
+}
+.p {
+  font-size: larger;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }

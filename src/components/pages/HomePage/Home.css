@@ -1,0 +1,26 @@
+hr {
+  height: 4px;
+
+  background: #04556d;
+}
+.exactsect {
+  padding-top: 90px;
+}
+.exact {
+  padding-top: 40px;
+}
+.Container {
+  padding-left: 20px;
+}
+.bgc {
+  background-color: #04556d;
+}
+.textc {
+  color: white;
+}
+.hm {
+  color: #022c38;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 0 2px #16baec, 0 3px #777;
+}
