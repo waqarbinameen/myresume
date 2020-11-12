@@ -4,11 +4,14 @@ import { Container, Row, Col,Progress  } from 'reactstrap';
 import { buildStyles, CircularProgressbar } from 'react-circular-progressbar';
 import "react-circular-progressbar/dist/styles.css";
 
+
+
 const value = 88;
 function Home() {
 
   return (
     <>
+   
   <Container fluid={true}>
   <Row id="Home" className="exactsect">
         <Col>
@@ -42,7 +45,6 @@ background, and ability to work well with people.</p>
 
         </p>
         </Col>
-        <Col><div className="Container"><img src="./img/Education.png" height="20%" width="50%" alt="Education"/></div></Col>
       </Row>
       <Row className="bgc textc"  >
         <Col>

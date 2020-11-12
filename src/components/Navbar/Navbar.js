@@ -39,6 +39,9 @@ function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
   const handleClick = () => setClick(!click);
+  const downloadFile = () => {
+    window.location.href = "./files/Resume.pdf"
+  }
 
   const closeMobileMenu = () => setClick(false);
   const showButton = () => {
@@ -105,8 +108,29 @@ function Navbar() {
                   Experiences
                 </HashLink>
               </li>
-              
-              
+              <li className="nav-item">
+                <HashLink
+                  smooth
+                  to="/#Experience"
+                  className="nav-links"  style={{ color: '#FFF',textDecorationLine:"none"}}
+                  onClick={handleClick}
+                >
+                  Portfolio
+                </HashLink>
+              </li>
+              <li className="nav-btn">
+                {button ? (
+                  <HashLink to="/" className="btn-link">
+                    <Button buttonStyle="btn--outline" onClick={downloadFile}> Download </Button>
+                  </HashLink>
+                ) : (
+                  <HashLink to="/"  className="btn-link" onClick={downloadFile}>
+                    <Button buttonStyle="btn--outline" buttonSize="btn--mobile">
+                      Download
+                    </Button>
+                  </HashLink>
+                )}
+              </li>
               
             </ul>
            
