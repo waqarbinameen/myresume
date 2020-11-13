@@ -111,7 +111,7 @@ function Navbar() {
               <li className="nav-item">
                 <HashLink
                   smooth
-                  to="/#Experience"
+                  to="/"
                   className="nav-links"  style={{ color: '#FFF',textDecorationLine:"none"}}
                   onClick={handleClick}
                 >
